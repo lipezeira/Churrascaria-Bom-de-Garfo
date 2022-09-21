@@ -1,0 +1,147 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+@font-face{
+	font-family:'titulo';
+	src: url("FONTES/MsMadi-Regular.ttf");
+}
+@font-face{
+	font-family:'texto';
+	src: url("FONTES/Antonio-VariableFont_wght.ttf");
+}
+@font-face{
+	font-family:'abas';
+	src: url("FONTES/NotoSansAvestan-Regular.ttf");
+}
+
+@font-face{
+	font-family:'titulo2';
+	src: url("FONTES/RougeScript-Regular.ttf");
+}
+
+.site{
+	background-color:#240100;
+	display:grid;
+	grid-template-columns:20% 25% 15% 20% 20%;
+	/*grid-template-rows:5% 80% 5%;*/
+	grid-template-rows:50px auto auto auto 15px;
+}
+
+#menu{
+	grid-column-start:1;
+	grid-column-end:span 5;
+	border-bottom:5px solid white;
+}
+
+#menu ul{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	align-items:center;
+	height:100%;
+}
+
+#menu ul a{
+	color:white;
+	text-decoration:none;
+	font-family:"abas";
+	padding:2px;
+}
+
+ul a{
+	background:#240100;
+}
+
+#logo{
+	height:30px;
+}
+
+ul a:hover{
+	background:rgba(0,0,0,0);
+	color:white;
+	box-shadow: 0 0 0 3px white;
+	border-radius:2px;
+}
+
+#conteudo1{
+	grid-column:1/3;
+	grid-row:2/4;
+	background-color:#240100;
+	text-align:center;
+}
+
+#conteudo1 img{
+	text-align:center;
+	width:90%;
+	margin:10px auto 10px;
+}
+#conteudo1 h1{
+	font-family:"titulo2";
+	font-size:6em;
+	color:white;
+	text-shadow: 4px 1px 1px #240100;
+	margin-top:50px;
+}
+
+#conteudo2{
+	grid-column:3/6;
+	grid-row:2/4;
+	text-align:center;
+	background-color:#F08E33;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	text-align:center;
+	justify-content:center;
+}
+
+#conteudo2 h2{
+	width:100%;
+	text-align:center;
+	text-shadow: 3px 1px 1px #240100;
+	font-family:"texto";
+	font-size:2.5em;
+}
+
+#conteudo2 p{
+	margin-top:10px;
+	font-size:30px;
+	font-family:"texto";
+	text-shadow: 2px 1px 1px #240100;
+	text-align:center;
+}
+
+.h2{
+	width:45%;
+	height:20%;
+	margin:10px;
+	color:white;
+}
+
+#conteudo2 img{
+	width:100%;
+	margin:2% 2% 2% 2%;
+	border:3px solid white;
+}
+
+.imagem{
+	width:50%;
+}
+
+#rodape{
+	display:flex;
+	background-color:#240100;
+	grid-column:1/6;
+	text-align:center;
+	justify-content:space-evenly;
+	color:white;
+	font-family:"abas";
+	height:5vh;
+}
+
+#rodape p{
+	margin-top:10px;
+}

@@ -1,0 +1,199 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+@font-face{
+	font-family:'titulo';
+	src: url("fontes/MsMadi-Regular.ttf");
+}
+@font-face{
+	font-family:'texto';
+	src: url("fontes/Antonio-VariableFont_wght.ttf");
+}
+@font-face{
+	font-family:'abas';
+	src: url("fontes/NotoSansAvestan-Regular.ttf");
+}
+@font-face{
+	font-family:'titulo2';
+	src: url("fontes/RougeScript-Regular.ttf");
+}
+
+
+
+.site{
+	background-color:#F08E33;
+	display:grid;
+	grid-template-columns:5% 35% 20% 35% 5%;
+	width:205vh;
+	height:100vh;
+	grid-template-rows:50px auto auto auto 100px;
+	grid-template-areas:"menu menu menu menu menu"
+						". contum meio contdois ."
+						". contum meio contdois ."
+						". contum meio contdois ."
+						"rodape rodape rodape rodape rodape";
+}
+
+#menu{
+	grid-area:menu;
+	background-color:#240100;
+	border-bottom:5px solid white;
+}
+
+#menu ul{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	align-items:center;
+	height:100%;
+}
+
+#menu ul a{
+	color:white;
+	text-decoration:none;
+	font-family:"abas";
+	padding:2px;
+}
+
+ul a{
+	background:#240100;
+}
+
+ul a:hover{
+	background:rgba(0,0,0,0);
+	color:white;
+	box-shadow: 0 0 0 3px white;
+	border-radius:2px;
+}
+
+#logo{
+	height:30px;
+}
+
+#rodape{
+	background-color:#240100;
+	text-align:center;
+	color:white;
+	font-family:"abas";
+	grid-area:rodape;
+}
+
+#conteudo1{
+	grid-area:contum;
+	display:flex;
+	background-color:#240100;
+	color:white;
+	flex-direction:row;
+	flex-wrap:wrap;
+	text-align:center;
+	justify-content:center;
+}
+
+#conteudo1 h1{
+	width:100%;
+	font-family:"texto";
+}
+
+#conteudo1 img{
+	width:100%;
+	margin:2% 2% 2% 2%;
+	border:2px solid white;
+}
+
+.imagem{
+	width:50%;
+	
+}
+
+
+.h{
+	width:45%;
+	height:20%;
+	margin:10px;
+	font-family:'texto';
+	
+}
+	
+
+#conteudo2{
+	grid-area:contdois;
+	display:flex;
+	background-color:#240100;
+	color:white;
+	flex-direction:row;
+	flex-wrap:wrap;
+	text-align:center;
+	justify-content:center;
+}
+
+#conteudo2 h1{
+	width:100%;
+	font-family:"texto";
+}
+
+#conteudo2 img{
+	width:100%;
+	margin:2% 2% 2% 2%;
+	border:2px solid white;
+}
+
+#meio{
+	grid-area:meio;
+	text-align:center;
+}
+
+#meio h1{
+	color:white;
+	font-family:"titulo2";
+	font-size:4em;
+	text-shadow: 4px 1px 1px #240100;
+}
+
+
+#meio img{
+	width:100%;
+	margin-top:80px;
+}
+	
+#rodape{
+	display:flex;
+	background-color:#F08E33;
+	grid-column:1/6;
+	text-align:center;
+	justify-content:space-evenly;
+	color:white;
+	font-family:"abas";
+	flex-wrap:wrap;
+	height:50vh;
+	border-bottom:10px solid #240100;
+}
+
+.texto{
+	width:100%;
+}
+
+.imagem3{
+	height:40%;
+	margin:5%;
+	margin-top:0;
+}
+
+#texto{
+	width:100%;
+	background-color:#240100;
+	color:white;
+	display:flex;
+	border-bottom:3px solid white;
+}
+
+#pat{
+	width:100%;
+	margin-top:10px;
+	font-family:"titulo2";
+	text-shadow: 4px 0.5px 1px #240100;
+	font-size:4em;
+	
+}

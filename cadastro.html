@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cadastro</title>
+        <meta charset="utf-8">
+        <link href="cadastro.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="site">
+			<header id="menu">
+				<ul>
+					<li><a href="cardapio.html"><font color="white">Cardápio</font></a></li>
+					<li><a href="nossahistoria.html"><font color="white">Nossa História</font></a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li><a href="index.html">Página Inicial</a></li>
+					<li><a href="https://www.instagram.com/p/CiBZQMbOyyD2FtdIFYzdX1mgKvEBNjB-FtnKOQ0/"><img src="imagens/logoinsta.png" id="logo"></a></li>
+					
+				</ul>
+			</header>
+			
+			<main id="planodefundo">
+				<img src="imagens/cadastrofundo.jpg" id="papeldeparede">
+			</main>
+			
+			<section id="conteudo1">
+				<h1>Cadastro: </h1>
+				
+				<p>Faça o cadastro em nossa loja para concorrer ao sorteio semanal de kists de churrasco, além de ficar por dentro das atualizações e promoções de nossa loja.Venha para a churrascaria Bom de Garfo.
+				
+				<form action="http://www.thiagomiranda.net/formulario.php." method="post">
+			<div>
+				<label>Nome Completo:
+					<input type="text" name="nomecompleto">
+				</label>
+			</div>
+			<br>
+			
+			<div>	
+				<label>Data de nascimento:
+					<input type="date" name="datanascimento">
+				</label>
+			</div>
+			<br>
+			<div>	
+				<label>Email:
+					<input type="email" name="emailpessoa" placeholder="Digite seu melhor email">
+				</label>
+			</div>
+			<br>
+			<div>	
+				<label>Idade:
+					<input type="number" name="idade" min="1" max="100" value="10">
+				</label>
+			</div>
+			<br>
+			<div>	
+				<label>Cpf:
+					<input type="text" name="idade">
+				</label>
+			</div>
+			<br>
+			<div>	
+				<fieldset>
+					<legend>Sexo:</legend>
+					<input type="radio" name="sexo" value="Masculino" id="sexom"  >
+					<label>Masculino </label>
+					<input type="radio" name="sexo" value="Feminino" id="sexof" >
+					<label>Feminino</label>
+					<input type="radio" name="sexo" value="Outros" id="sexoo" >
+					<label>Outros</label>
+				</fieldset>
+			</div>
+			<br>
+			<div>	
+				<fieldset>
+					<legend>Horário de frequência</legend>
+					<label>
+						<input type="checkbox" name="frequencia" value="manhã">Manhã
+					</label>
+					
+					<label>
+						<input type="checkbox" name="frequencia" value="meio-dia">Meio-dia
+					</label>
+					
+					<label>
+						<input type="checkbox" name="frequencia" value="tarde" >Tarde
+					</label>
+					
+					<label>
+						<input type="checkbox" name="frequencia" value="noite" >Noite
+					</label>
+					
+					</fieldset>
+			</div>
+			<br>
+			<div>	
+				<label>Cidade onde nasceu:
+					<select name="cidade">
+						<option></option>
+						<option value="cidade1" >Brumado</option>
+						<option value="cidade2">Dom Basílio</option>
+						<option value="cidade3">Livramento</option>
+						<option value="cidade4">Rio de Contas</option>
+						<option value="cidade5">Lagoa Real</option>
+						<option value="cidade6">Vitória da Conquista</option>
+						<option value="cidade7">Aracatu</option>
+					<select>
+				</label>
+			</div>
+			<br>
+			<div>	
+				<label>
+					<legend>Primeiras impressões com a churrascaria:</legend>
+					<textarea name ="comentário" rows="10" cols="50">
+					</textarea>
+				</label>
+			</div>
+			<br>
+			<div>	
+				<label>Data Preenchimento Formulário::
+					<input type="date" name="datapreenchimento">
+				</label>
+			</div>
+			<br>
+			<div>                                                                                       
+				<button type="submit">Enviar</button>                                                                                                        
+			</div
+			
+			<div>                                                                                       
+				<button type="reset">Resetar</button>                                                                                                        
+			</div>
+		</form>
+			</section>
+	
+			<footer id="rodape">
+			<br>
+				<p>Telefone: (77) 99999-9999</p>
+				<p> Av.José Caires Pinheiro N°103</p>
+				<p>Brumado/Bahia</p>
+			<br>
+			</footer>
+			
+			
+		</div>
+	
+	</body>
+</html>
